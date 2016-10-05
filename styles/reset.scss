@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  max-height: 100vh;
 }
 
 img {
@@ -23,15 +24,13 @@ $brandwhite: #fff;
 .section {
   margin: 0 auto;
   padding: 1rem;
-  background: #fff;
   color: $brandprimary;
   text-align: center;
   font-family: sans-serif;
-
 }
 
 .container {
-  width: 60rem;
+  max-width: 100%;
   margin: 0 auto;
   min-height: 100vh;
 }

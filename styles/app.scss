@@ -6,10 +6,14 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
 @import 'reset';
 
-
-@media only screen and (orientation: landscape) {
-  body {
-    background: lightblue;
-    display: grid;
-  }
+@media only screen and (max-width: 414px) {
+  .grid__item {
+    width: 100%;
+}
+.shop-item__actions-btn {
+      // // display: flex;
+      // // flex-direction: column;
+      // float: right;
+      // background: pink;
+    }
 }
