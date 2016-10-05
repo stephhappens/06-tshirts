@@ -88,18 +88,77 @@ $brandwhite: #fff;
   }
 }
 
+
 .shop-menu__tooltip-item--color-red {
     color: #e577aa;
+    border-top: .2rem solid $brandprimary;
+    border-left: .2rem solid $brandprimary;
+    border-right: .2rem solid $brandprimary;
+    padding: .3rem 1.1rem;
+    &:hover {
+      font-size: 2rem;
+    }
   }
 
 .shop-menu__tooltip-item--color-blue {
   color: #72bbe9;
+  border-top: .2rem solid $brandprimary;
+  border-left: .2rem solid $brandprimary;
+  border-right: .2rem solid $brandprimary;
+  padding: .3rem 1.1rem;
+  &:hover {
+    font-size: 2rem;
+  }
 }
 
 .shop-menu__tooltip-item--color-yellow {
   color: #e5b178;
+  border-top: .2rem solid $brandprimary;
+  border-left: .2rem solid $brandprimary;
+  border-right: .2rem solid $brandprimary;
+  padding: .3rem 1.1rem;
+  &:hover {
+    font-size: 2rem;
+  }
 }
 
 .shop-menu__tooltip-item--color-green {
   color: #7abe93;
+  border-top: .2rem solid $brandprimary;
+  border-left: .2rem solid $brandprimary;
+  border-right: .2rem solid $brandprimary;
+  padding: .3rem 1.1rem;
+  &:hover {
+    font-size: 2rem;
+  }
+}
+.shop-menu {
+  position: relative;
+
+  &:hover {
+    .shop-menu__tooltip {
+      display: flex;
+    }
+  }
+
+  &__tooltip {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+    background: $brandwhite;
+  }
+
+  &__tooltip-item {
+    border-top: 0.2rem solid $brandprimary;
+    border-left: 0.2rem solid $brandprimary;
+    border-right: 0.2rem solid $brandprimary;
+    padding: 0.3rem 1.1rem;
+
+    &:hover {
+      font-size: 1.5rem;
+    }
+  }
 }

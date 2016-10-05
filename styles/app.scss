@@ -6,16 +6,10 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
 @import 'reset';
 
-// @import 'adonis':
 
-
-.shop-menu {
-position: relative;
-
-&__tooltip {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translate(-50%,0);
-}
+@media only screen and (orientation: landscape) {
+  body {
+    background: lightblue;
+    display: grid;
+  }
 }
