@@ -6,14 +6,27 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
 @import 'reset';
 
-@media only screen and (max-width: 414px) {
+@media (min-width: 460px)  and (max-width: 760px) {
   .grid__item {
     width: 100%;
-}
-.shop-item__actions-btn {
-      // // display: flex;
-      // // flex-direction: column;
-      // float: right;
-      // background: pink;
+
+    .shop-item {
+      flex-direction: row;
+
+      &__actions {
+      flex-direction: column;
+      border-left: .2rem solid $brandprimary;
+      border-top: 0;
+      border-right: 0;
+
+      &-btn {
+        border: .1rem solid $brandprimary;
+
+        &:hover {
+
+        }
     }
+  }
+}
+}
 }

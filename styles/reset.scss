@@ -17,7 +17,6 @@ ul {
   list-style: none;
 }
 
-
 $brandprimary: #3473b5;
 $brandwhite: #fff;
 
@@ -43,11 +42,14 @@ $brandwhite: #fff;
     width: calc(100% / 3 - 2rem);
     margin: 1rem;
     border: 0.2rem solid $brandprimary;
-
   }
 }
 
 .shop-item {
+  min-width: 10rem;
+  display: flex;
+  flex-direction: column;
+
   &__frame {
     padding-top: 0.5rem;
   }
@@ -66,7 +68,7 @@ $brandwhite: #fff;
 
   &__actions {
     border-top: 0.2rem solid $brandprimary;
-    max-height: 2rem;
+    // max-height: 2rem;
     display: flex;
     flex-direction: row;
     max-width: 100%;
