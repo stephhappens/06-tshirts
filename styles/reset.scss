@@ -150,23 +150,28 @@ $brandwhite: #fff;
   }
 
   &__tooltip {
+    margin: 0;
     display: none;
     flex-direction: column;
     position: absolute;
     bottom: 100%;
     left: 50%;
     transform: translate(-50%,0);
+    border: 0.1rem solid $brandprimary;
     background: $brandwhite;
   }
 
   &__tooltip-item {
+    border: 0;
     border-top: 0.1rem solid $brandprimary;
-    border-left: 0.1rem solid $brandprimary;
-    border-right: 0.1rem solid $brandprimary;
     padding: 0.3rem 1.1rem;
 
     &:hover {
       font-size: 1.5rem;
+    }
+
+    &:first-of-type {
+      border: 0;
     }
   }
 }

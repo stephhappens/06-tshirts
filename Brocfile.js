@@ -12,7 +12,7 @@ if (process.env.EMBER_ENV === 'production') {
 
 const stylePaths = [
   'styles',
-  'node_modules',
+  'node_modules/font-awesome',
 ];
 
 const compiledSass = new Sass(stylePaths, 'app.scss', 'app.css');

@@ -2,13 +2,33 @@
 // @import 'normalize-css/normalize';
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-@import 'font-awesome/scss/font-awesome';
+@import 'scss/font-awesome';
 @import 'box-sizing';
 @import 'reset';
 
 @media (min-width: 460px) and (max-width: 760px) {
   .grid__item {
     width: 100%;
+
+    .shop-menu {
+      &__tooltip {
+        flex-direction: row;
+        left: auto;
+        right: 100%;
+        bottom: 50%;
+
+
+        transform: translateY(50%);
+      }
+
+      &__tooltip-item {
+        border: 0;
+        border-right: 0.1rem solid $brandprimary;
+          &:last-of-type {
+            border: 0;
+          }
+      }
+    }
 
     .shop-item {
       flex-direction: row;
@@ -31,22 +51,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
           &:first-of-type {
             border-top: 0;
-          }
-
-          &:hover {
-            // position: relative;
-            // right: 100%;
-
-            .shop-menu__tooltip {
-              display: flex;
-              margin: 1rem 2rem;
-              flex-direction: row-reverse;
-              position: absolute;
-              bottom: 1rem;
-              right: 3rem;
-              left: -.9rem;
-              border-bottom: 0.1rem solid $brandprimary;
-            }
           }
         }
       }
